@@ -1,6 +1,7 @@
 [submodule "vis"]
 	path = vis
 	url = https://github.com/JaZafier00716/VIS.git
+	branch = projekt
 [submodule "tds-i"]
 	path = tds-i
 	url = https://github.com/JaZafier00716/TDS-I.git
