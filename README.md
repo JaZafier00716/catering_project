@@ -27,17 +27,11 @@ git clone --recurse-submodules https://github.com/JaZafier00716/catering_project
 git submodule update --init
 ```
 
-Update both parts to their latest commits. First refresh the `projekt` branch in your VIS clone:
+Update both parts to their latest commits (refreshes the `projekt` branch in your VIS clone, then the submodule pins):
 
 ```bash
-git -C ~/path/to/VIS subtree split --prefix=projekt -b projekt && git -C ~/path/to/VIS push origin projekt
-```
-
-Then, here:
-
-```bash
-git submodule update --remote
-git commit -am "Update submodules"
+./update.sh                      # VIS clone at ~/Documents/VSB/tretak/VIS
+VIS_DIR=/other/path ./update.sh  # or point it elsewhere
 ```
 
 ## Run
